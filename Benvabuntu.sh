@@ -3,22 +3,14 @@
 clear
 echo Installing Benvabuntu...
 mkdir ~/Benvabuntu/
-touch ~/Benvabuntu/.BenvaCommands.sh
-sudo snap install code
-sudo snap install tree  # version 1.8.0+pkg-3fd6,
-sudo snap install root-framework
-sudo snap refresh
-#Start Custom commands
-function cls() {
- 	 clear
-}
-function welcome() {
- 	 echo ‘Hello’ $1‘!’
-}
-function benva-help() {
- 	 echo "Help is avalable at https://github.com/NateYeet/Benvabuntu"
-}
 
+sudo snap install code -- classic
+#Start Custom commands
+touch ~/Benvabuntu/.BenvaCommands.sh
+code ~/Benvabuntu/.BenvaCommands.sh
+alias cls='clear'
+alias welcome='echo "Welcome $USER."'
+alias welcome='Help is avalable at https://github.com/NateYeet/Benvabuntu'
 alias benva-settings='cls'
 source ~/Benvabuntu/.BenvaCommands.sh
 cls
