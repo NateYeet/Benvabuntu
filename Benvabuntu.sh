@@ -4,16 +4,11 @@ clear
 echo Installing Benvabuntu...
 mkdir ~/Benvabuntu/
 
-sudo snap install code -- classic
+
 #Start Custom commands
-touch ~/Benvabuntu/.BenvaCommands.sh
-code ~/Benvabuntu/.BenvaCommands.sh
-alias cls='clear'
-alias welcome='echo "Welcome $USER."'
-alias welcome='Help is avalable at https://github.com/NateYeet/Benvabuntu'
-alias benva-settings='cls'
-source ~/Benvabuntu/.BenvaCommands.sh
-cls
+curl https://raw.githubusercontent.com/NateYeet/Benvabuntu/main/.BenvaCommands.sh > ~/Benvabuntu/.BenvaCommands.sh
+
+
 echo "
 ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░
 ░██║░░██╗░░██║██╔════╝██║░░░░░██╔══██╗██╔══██╗████╗░████║██╔════╝  ╚══██╔══╝██╔══██╗
