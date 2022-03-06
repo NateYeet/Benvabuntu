@@ -2,12 +2,16 @@
 
 clear
 echo Installing Benvabuntu...
-mkdir ~/Benvabuntu/
+mkdir ~/Benvabuntu
+cd Benvabuntu
+
+
 
 
 #Start Custom commands
 curl https://raw.githubusercontent.com/NateYeet/Benvabuntu/main/.BenvaCommands.sh > ~/Benvabuntu/.BenvaCommands.sh
-
+chmod u+x ~/Benvabuntu/.BenvaCommands.sh
+./.BenvaCommands.sh
 
 echo "
 ░██╗░░░░░░░██╗███████╗██╗░░░░░░█████╗░░█████╗░███╗░░░███╗███████╗  ████████╗░█████╗░
